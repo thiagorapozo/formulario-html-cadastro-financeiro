@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro Financeiro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Cadastro Financeiro</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="Ex: 11999999999" required>
+            </div>
+
+            <div class="form-group">
+                <label for="account-type">Tipo de Conta:</label>
+                <select id="account-type" name="account-type" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="pessoal">Conta Pessoal</option>
+                    <option value="empresarial">Conta Empresarial</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Gênero:</label>
+                <input type="radio" id="male" name="gender" value="masculino">
+                <label for="male">Masculino</label>
+                <input type="radio" id="female" name="gender" value="feminino">
+                <label for="female">Feminino</label>
+            </div>
+
+            <div class="form-group">
+                <label for="file">Anexar Documento (opcional):</label>
+                <input type="file" id="file" name="file">
+            </div>
+
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required> Concordo com os termos e condições
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Descrição Financeira:</label>
+                <textarea id="description" name="description" rows="5" placeholder="Descreva seu objetivo financeiro" required></textarea>
+            </div>
+
+            <button type="submit">Enviar Cadastro</button>
+        </form>
+    </div>
+</body>
+</html>
